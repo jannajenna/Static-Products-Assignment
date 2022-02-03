@@ -20,6 +20,7 @@
 
 body {
   background-color: var(--bckg-color);
+  margin: 2.5rem;
 }
 
 /* Header and main navigation */
@@ -40,9 +41,9 @@ li {
   list-style: none;
 }
 
-/* a {
+a {
   text-decoration: none;
-} */
+}
 
 .wraper {
   display: flex;
@@ -59,7 +60,7 @@ li {
   gap: 10px;
 }
 
-a {
+.mainNav > li > a {
   text-decoration: underline;
   color: var(--text-1-color);
   font-family: var(--font);
@@ -68,9 +69,9 @@ a {
 
 /* Product list */
 
-.productlist {
+/* .productlist {
   margin: 2.5rem;
-}
+} */
 
 h2 {
   font-size: var(--font-medium);
@@ -133,4 +134,21 @@ img {
 
 h2 {
   grid-column: 1/-1;
+}
+
+/* Product view */
+
+.breadcrumbs > li,
+.breadcrumbs > li > a {
+  font-family: var(--font);
+  color: var(--text-1-color);
+}
+
+.breadcrumbs li a :hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
 }
