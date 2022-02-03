@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -10,4 +10,57 @@
   --ccent-color: #f10809;
   --text-1-color: white;
   --text-2-color: #e1dfdb;
+
+  --font: "Roboto", Arial, Helvetica, sans-serif;
+
+  --font-big: 3.052rem;
+  --font-medium: 1.563rem;
+}
+
+body {
+  background-color: var(--bckg-color);
+}
+
+/* Header and mani navigation */
+
+h1 {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: var(--font-big);
+  color: var(--text-2-color);
+}
+
+.R {
+  color: var(--ccent-color);
+  transform: scale(-1, 1);
+}
+
+li {
+  list-style: none;
+}
+
+/* a {
+  text-decoration: none;
+} */
+
+.wraper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 1 40%;
+  padding: 2rem;
+}
+
+.mainNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.mainNav a {
+  text-decoration: underline;
+  color: var(--text-1-color);
+  font-family: var(--font);
 }
