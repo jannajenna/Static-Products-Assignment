@@ -13,21 +13,22 @@
 
   --font: "Roboto", Arial, Helvetica, sans-serif;
 
-  --font-big: 3.052rem;
-  --font-medium: 1.563rem;
+  --font-big: 4rem;
+  --font-medium: 2.5rem;
+  --font-small: 1.2rem;
 }
 
 body {
   background-color: var(--bckg-color);
 }
 
-/* Header and mani navigation */
+/* Header and main navigation */
 
 h1 {
   font-family: var(--font);
   font-weight: 700;
   font-size: var(--font-big);
-  color: var(--text-2-color);
+  color: var(--text-1-color);
 }
 
 .R {
@@ -49,7 +50,6 @@ li {
   align-items: center;
   justify-content: space-between;
   flex: 0 1 40%;
-  padding: 2rem;
 }
 
 .mainNav {
@@ -59,8 +59,78 @@ li {
   gap: 10px;
 }
 
-.mainNav a {
+a {
   text-decoration: underline;
   color: var(--text-1-color);
   font-family: var(--font);
+  font-size: var(--font-small);
+}
+
+/* Product list */
+
+.productlist {
+  margin: 2.5rem;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+h2,
+.tshirtName {
+  font-weight: 700;
+}
+
+.grey {
+  color: var(--text-2-color);
+}
+
+h2,
+p {
+  color: var(--text-1-color);
+  font-family: var(--font);
+  line-height: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price :nth-child(2) {
+  background-color: var(--ccent-color);
+}
+
+.soldOut > img {
+  opacity: 0.5;
+}
+
+.soldOuttext {
+  background-color: white;
+  width: 50%;
+}
+.soldOuttext > p {
+  color: var(--ccent-color);
+}
+
+.wrapermain {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem 2rem;
+}
+
+h2 {
+  grid-column: 1/-1;
 }
