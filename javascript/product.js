@@ -8,7 +8,4 @@ fetch(url)
 
 function showProduct(product) {
   console.log(product);
-  document.querySelector(".breadcrumbs.brand").textContent = product.brandname;
-  document.querySelector(".breadcrumbs.productname").textContent =
-    product.productdisplayname;
 }

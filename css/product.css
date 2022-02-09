@@ -95,3 +95,21 @@
 .breadcrumbs li:last-child a:hover {
   cursor: pointer;
 }
+
+.productitem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+}
+
+.productimg {
+  grid-column: 1/-1;
+}
+
+.productinfo {
+  grid-column: 1/2;
+}
+
+.productbuy {
+  grid-column: 2/3;
+}
