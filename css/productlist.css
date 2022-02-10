@@ -45,7 +45,7 @@ p {
   background-color: var(--ccent-color-1);
 }
 
-.soldOut > img {
+.wrapermain article.soldOut > img {
   opacity: 0.5;
 }
 

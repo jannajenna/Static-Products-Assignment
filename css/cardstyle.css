@@ -1,0 +1,36 @@
+.imgwtext {
+  max-width: 100%;
+  position: relative;
+}
+
+figcaption.soulOutText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+figcaption.disccountNum {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+}
+
+figcaption {
+  padding: 3px;
+  background-color: pink;
+  font-size: var(--font-medium);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.price {
+  display: flex;
+  /* justify-content: space-between; */
+  column-gap: 0.5rem;
+}
