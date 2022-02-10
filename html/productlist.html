@@ -7,8 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/productlist.css" />
+    <link rel="stylesheet" href="../css/cardstyle.css" />
   </head>
-  <body>
+  <body class="productlist">
     <header>
       <div class="wraperheader">
         <h1>Fashion<span class="R">R</span>Us</h1>
@@ -23,7 +24,91 @@
     </header>
     <main class="wrapermain">
       <h2>Nike</h2>
-      <article class="card">
+
+      <template id="producttemplate">
+        <article class="card">
+          <figure class="imgwtext">
+            <img
+              class="list-img"
+              src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp"
+              alt="Deck Navy Blue Backpack"
+            />
+            <figcaption class="soulOutText">Sold Out</figcaption>
+            <figcaption class="disccountNum">50%</figcaption>
+          </figure>
+
+          <h3>Deck Navy Blue Backpack</h3>
+          <p class="subtle">Tshirt - Nike</p>
+          <div class="price">
+            <p class="original">DKK 1900,-</p>
+            <p class="discountprice">DKK 1400,-</p>
+          </div>
+          <a href="../html/product.html">Read more</a>
+        </article>
+      </template>
+      <!-- Cards -->
+
+      <!--  <article class="card onSale">
+        <figure class="imgwtext">
+          <img
+            class="list-img"
+            src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp"
+            alt="Deck Navy Blue Backpack"
+          />
+          <figcaption class="soulOutText">Sold Out</figcaption>
+          <figcaption class="disccountNum">50%</figcaption>
+        </figure>
+
+        <h3>Deck Navy Blue Backpack</h3>
+        <p class="subtle">Tshirt - Nike</p>
+        <div class="price">
+          <p class="original">DKK 1900,-</p>
+          <p class="discountprice">DKK 1400,-</p>
+        </div>
+        <a href="../html/product.html">Read more</a>
+      </article>
+
+      <article class="card soldOut">
+        <figure class="imgwtext">
+          <img
+            class="list-img"
+            src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp"
+            alt="Deck Navy Blue Backpack"
+          />
+          <figcaption class="soulOutText">Sold Out</figcaption>
+          <figcaption class="disccountNum">50%</figcaption>
+        </figure>
+
+        <h3>Deck Navy Blue Backpack</h3>
+        <p class="subtle">Tshirt - Nike</p>
+        <div class="price">
+          <p class="original">DKK 1900,-</p>
+          <p class="discountprice">DKK 1400,-</p>
+        </div>
+        <a href="../html/product.html">Read more</a>
+      </article>
+
+      <article class="card onSale soldOut">
+        <figure class="imgwtext">
+          <img
+            class="list-img"
+            src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp"
+            alt="Deck Navy Blue Backpack"
+          />
+          <figcaption class="soulOutText">Sold Out</figcaption>
+          <figcaption class="disccountNum">50%</figcaption>
+        </figure>
+
+        <h3>Deck Navy Blue Backpack</h3>
+        <p class="subtle">Tshirt - Nike</p>
+        <div class="price">
+          <p class="original">DKK 1900,-</p>
+          <p class="discountprice">DKK 1400,-</p>
+        </div>
+        <a href="../html/product.html">Read more</a>
+      </article>
+ -->
+      <!--   <article class="card">
         <img
           src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
           alt="Sahara Team India Fanwear Round Neck Jersey"
@@ -33,7 +118,7 @@
         <p class="price">DKK 1595,-</p>
         <a href="productlist.html">Read More</a>
       </article>
-      <!-- 
+      
       <article class="card disccount">
         <img
           src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp"
@@ -71,7 +156,8 @@
           <p>-55%</p>
         </div>
         <a href="#">Read More</a>
-      </article> -->
+      </article>  -->
     </main>
+    <script src="../javascript/productlist.js"></script>
   </body>
 </html>

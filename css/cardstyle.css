@@ -19,8 +19,7 @@ figcaption.disccountNum {
 
 figcaption {
   padding: 3px;
-  background-color: pink;
-  font-size: var(--font-medium);
+  background-color: red;
 }
 
 .card {

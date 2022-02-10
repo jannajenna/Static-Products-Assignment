@@ -10,23 +10,17 @@ h2 {
   font-weight: 700;
 }
 
-.lighter {
-  opacity: 80%;
-}
-
-p {
-  color: var(--text-1-color);
-  font-family: var(--font);
-  line-height: 1.5rem;
-}
-
 .card {
   background-color: var(--xtra-color-3);
   padding: 10px;
 }
 
-.card > img {
-  max-width: 100%;
+.subtle {
+  opacity: 0.6;
+}
+
+.productlist article.soldOut img {
+  opacity: 0.5;
 }
 
 .card {
@@ -35,18 +29,56 @@ p {
   line-height: 1.5;
 }
 
+.imgwtext {
+  max-width: 100%;
+  position: relative;
+}
+
+figcaption.soulOutText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+figcaption.disccountNum {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+}
+
+figcaption {
+  padding: 3px;
+  background-color: red;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
 .price {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  column-gap: 0.5rem;
 }
 
-.price :nth-child(2) {
-  color: var(--bckg-color);
-  background-color: var(--ccent-color-1);
+.discountprice {
+  color: red;
+  font-weight: 700;
 }
 
-.wrapermain article.soldOut > img {
-  opacity: 0.5;
+/* .discount {
+  color: red;
+} */
+/* .price :nth-child(1) {
+  text-decoration: line-through;
+} */
+
+article.soldOut > img {
+  opacity: 0.2;
 }
 
 .wrapermain {
@@ -58,5 +90,19 @@ p {
 .card > a {
   font-family: var(--font);
   color: var(--text-1-color);
-  text-decoration: underline dotted var(--ccent-color-3);
+  text-decoration: underline solid;
+}
+
+/* Hide and show sold out and discount */
+
+.productlist article .soulOutText,
+.productlist article .disccountNum {
+  color: white;
+  font-weight: 600;
+}
+
+.productlist article .soulOutText,
+.productlist article .disccountNum,
+.productlist article .discountprice {
+  /* display: none; */
 }
