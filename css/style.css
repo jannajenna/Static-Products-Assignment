@@ -76,3 +76,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* brands page */
+
+.alphabetlinks {
+  display: flex;
+  flex-direction: row;
+}

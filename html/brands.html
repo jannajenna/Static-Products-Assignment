@@ -9,10 +9,10 @@
   </head>
   <body>
     <header>
-      <div class="wraper">
+      <div class="wraperheader">
         <h1>Fashion<span class="R">R</span>Us</h1>
         <nav>
-          <ul class="mainNav">
+          <ul class="mainnav">
             <li><a href="#">Categories</a></li>
             <li><a href="#">Brands</a></li>
             <li><a href="#">Seasons</a></li>
@@ -21,9 +21,27 @@
       </div>
     </header>
     <main>
-      <section class="alphabetLinks">
-        <ol></ol>
-      </section>
+      <template class="alphabettemplate">
+        <nav class="alphabetLinks">
+          <ol>
+            <li>
+              <a href="#">A</a>
+            </li>
+          </ol>
+        </nav>
+      </template>
+      <template class="brandtemplate">
+        <section id="letter_a">
+          <h2>A</h2>
+          <nav>
+            <ol>
+              <li></li>
+            </ol>
+          </nav>
+        </section>
+      </template>
+      <div class="brandlist"></div>
     </main>
+    <script src="../javascript/brand.js"></script>
   </body>
 </html>
