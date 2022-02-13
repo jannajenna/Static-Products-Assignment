@@ -18,22 +18,27 @@
   overflow: hidden;
 }
 
-.breadcrumbs li {
-  float: left;
+.breadcrumbs li span {
+  font-family: var(--font);
+  color: var(--ccent-color-3);
+  padding-right: 5px;
 }
 
-.breadcrumbs li a,
 .breadcrumbs li {
   font-family: var(--font);
   color: var(--ccent-color-3);
-  padding: 5px 0 5px 20px;
+  padding: 5px 0 5px 15px;
   background-color: var(--bckg-color);
   position: relative;
   display: block;
   float: left;
 }
 
-.breadcrumbs li a::after {
+.breadcrumbs li:first-child {
+  padding-left: 0px;
+}
+
+/* .breadcrumbs li a::after {
   content: "";
   display: block;
   width: 0;
@@ -64,19 +69,6 @@
   z-index: 1;
 }
 
-.breadcrumbs li:first-child a {
-  padding-left: 10px;
-}
-
-/* .breadcrumbs li:nth-child(2) a,
-.breadcrumbs li:nth-child(2) {
-  background: var(--ccent-color-2);
-}
-
-.breadcrumbs li:nth-child(2) a::after {
-  border-left-color: var(--ccent-color-2);
-} */
-
 .breadcrumbs li:last-child a,
 .breadcrumbs li:last-child {
   background: transparent;
@@ -86,6 +78,11 @@
 .breadcrumbs li:last-child a::after,
 .breadcrumbs li:last-child a::before {
   border: 0;
+} */
+
+.breadcrumbs .bread::after {
+  content: "/";
+  color: var(--ccent-color-3);
 }
 
 .breadcrumbs li a:hover {

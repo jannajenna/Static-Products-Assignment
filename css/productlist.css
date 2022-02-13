@@ -70,17 +70,6 @@ figcaption {
   font-weight: 700;
 }
 
-/* .discount {
-  color: red;
-} */
-/* .price :nth-child(1) {
-  text-decoration: line-through;
-} */
-
-article.soldOut > img {
-  opacity: 0.2;
-}
-
 .wrapermain {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -95,14 +84,23 @@ article.soldOut > img {
 
 /* Hide and show sold out and discount */
 
-.productlist article .soulOutText,
-.productlist article .disccountNum {
+.soldOutText,
+.disccountNum {
   color: white;
   font-weight: 600;
 }
 
-.productlist article .soulOutText,
-.productlist article .disccountNum,
-.productlist article .discountprice {
-  /* display: none; */
+article.soldOut > img {
+  opacity: 0.2;
 }
+
+.soldOutText,
+.disccountNum,
+.discountprice {
+  display: none;
+}
+
+/* .productlist article .onSale .disccountNum,
+.productlist article .onSale .discountprice {
+  display: initial;
+} */
