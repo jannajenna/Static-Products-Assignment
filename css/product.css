@@ -110,16 +110,6 @@ body {
   max-width: 100%;
 }
 
-/* .productimg {
-  grid-column: 1/2;
-  grid-row: 1/-1;
-}
-
-.productinfo,
-.productbuy {
-  grid-column: 2/3;
-  padding-left: 1.5rem;
-} */
 .productinfo h2,
 .productbuy h2 {
   font-size: var(--font-medium);

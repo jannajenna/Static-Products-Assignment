@@ -61,7 +61,6 @@ figcaption {
 
 .price {
   display: flex;
-  /* justify-content: space-between; */
   column-gap: 0.5rem;
 }
 
@@ -99,8 +98,3 @@ article.soldOut > img {
 .discountprice {
   display: none;
 }
-
-/* .productlist article .onSale .disccountNum,
-.productlist article .onSale .discountprice {
-  display: initial;
-} */

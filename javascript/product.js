@@ -1,5 +1,3 @@
-console.log("Hello");
-
 const urlParams = new URLSearchParams(window.location.search);
 
 const id = urlParams.get("id");
@@ -12,6 +10,7 @@ fetch(url)
 
 function showProduct(product) {
   console.log(product);
+
   document.querySelector(".breadcrumbs .brand").textContent = product.brandname;
   document.querySelector(".breadcrumbs .productname").textContent =
     product.productdisplayname;

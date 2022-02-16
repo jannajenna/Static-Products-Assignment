@@ -1,5 +1,3 @@
-console.log("Hello");
-
 const url = "https://kea-alt-del.dk/t7/api/products";
 
 fetch(url)
@@ -15,25 +13,6 @@ function handleProductList(data) {
     showProduct(item);
   });
 }
-
-/* <article class="card onSale soldOut">
-<figure class="imgwtext">
-  <img
-    class="list-img"
-    src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp"
-    alt="Deck Navy Blue Backpack"
-  />
-  <figcaption class="soulOutText">Sold Out</figcaption>
-  <figcaption class="disccountNum">50%</figcaption>
-</figure>
-<h3>Deck Navy Blue Backpack</h3>
-
-<div class="price">
-  <p class="original">DKK 1900,-</p>
-  <p class="discountprice">DKK 1400,-</p>
-</div>
-<a href="../html/product.html">Read more</a>
-</article> */
 
 function showProduct(product) {
   console.log(product);
@@ -65,7 +44,11 @@ function showProduct(product) {
 
   /* Sold Out and discount */
 
-  /*   if ((product.soldoutn = 1)) {
+  /* if (product.soldout) {
     copy.querySelector("article").classList.add("soldOutText");
+  } */
+
+  /*  if (product.discount) {
+    copy.querySelector("article").classList.add("onSale");
   } */
 }
